@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--  
+    当外部css放在heml的style上面，优先级小于style的嵌入式
+    <link rel="stylesheet" href="test.css">
+    -->
+    <style type="text/css">
+        p{
+            color: blue;
+        }
+    </style>
+    <!-- 当外部css放在heml的style下面，优先级大于style的嵌入式 -->
+    <!-- <link rel="stylesheet" href="../test/css/out.css"> -->
+</head>
+<body>
+    <p id="p1" >哈哈哈哈哈哈哈</p>
+    <p id="p2">啦啦啦啦啊</p>
+    <span id="span1">审判摄氏度的发射点发射点发</span>
+</body>
+</html>

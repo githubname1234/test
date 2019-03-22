@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style type="text/css">
+        /* 通用选择器，作用于html所有的元素 */
+        *{
+            font-size: 20px;
+            font-style:italic;
+        }
+        /* 子选择器，只作用于直属第一代，class类属性前面一定要加上一个圆点 */
+        .ul1>li{
+            border: 1px solid palevioletred;
+            color: blue
+        }
+        /* 后代选择器，作用于后代所有，中间有个空格 */
+        .ol1 li{
+            color: red;
+            border: 1px solid palevioletred;
+        }
+        /* 伪类选择符，hover鼠标滑过显示字体颜色 */
+        a:hover{
+            color: coral;
+        }
+        p:hover{
+            color: coral;
+        }
+        /* 分组选择符，为多个标签设置同一个样式 */
+        .p2,span{
+            color: crimson;
+            text-align: center;
+            text-decoration: rgb(236, 164, 7);
+        }
+    </style>
+</head>
+<body>
+    <p>哇塞</p>
+    <p class="p2">窈窕淑女，君子好逑。<span>蒹葭苍苍，</span>白露为霜</p>
+    <span class="span1">所谓伊人在水一方</span>
+    <a href="https://www.baidu.com/">点击可跳转到百度</a>
+    <ul class="ul1">
+        <li>一代
+            <ul>一代
+                <li>二代</li>
+            </ul>
+        </li>
+        <li>一代</li>
+        <li>一代</li>
+    </ul>
+    <ol class="ol1">
+        <li>一代
+            <ul>非作用元素
+                <li>二代</li>
+            </ul>
+        </li>
+        <li>一代</li>
+        <li>一代</li>
+    </ol>
+</body>
+</html>

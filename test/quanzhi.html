@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 权值：权值高的优先级高 */
+        p{
+            color: red;
+            text-align: center;    /*段落居中对齐 */
+        }
+        span{
+            color: rgb(70, 161, 10);
+            font-weight: bold;
+            text-indent: 3em;  /* 段落缩进，段落缩进作用于行内元素，而不是块级元素 */
+            display:block;    /* 块级元素，用display：block;或者overflow:hidden隐藏 */
+            line-height: 2em;   /* 行高 */
+            letter-spacing: 1.5em;   /*文字间距 */
+        }
+        div{
+            word-spacing: 1em;   /*字母间距 */
+        }
+        /* 字体排版，Microsoft Yahei=微软雅黑 */
+        body{
+            font-family: "Microsoft Yahei"
+        }
+        /* 字体排版 */ 
+        p span{
+             font-weight: bold; /* 字体粗体 */
+             font-style: italic; /* 字体斜体 */
+             text-decoration: underline;  /* 添加下划线 */
+             text-decoration-color: rgb(241, 226, 6);
+             text-decoration-style: double;  /* 双下划线 */
+        }
+        /* 删除线 */
+        #class1{
+            text-decoration: line-through;
+        }
+        a{
+            width: 200px;
+            height: 50px;
+            background-color: pink;
+            display: inline-block;   /* 修改a为内联块元素 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body id="body1">
+    <p class="p1">
+            蒹葭苍苍，白露为霜。所谓伊人，在水一方。 <br>
+            溯洄从之，道阻且长；溯游从之，宛在水中央。<br>
+            蒹葭凄凄，白露未晞... <br>
+        <span id="span1">
+                氓之蚩蚩，抱布贸丝。匪来贸丝，来即我谋。<br>
+                送子涉淇，至于顿丘。匪我愆期，子无良媒。<br>
+                将子无怒，秋以为期。...  <br>
+        </span>
+    </p>
+    <span id="class1">
+            采薇采薇，薇亦作止。曰归曰归，岁亦莫止。
+            靡家靡室，猃狁之故。不遑启居，猃狁之故。
+            采薇采薇，薇亦柔止。...
+    </span>
+    <div>
+            If you were a teardrop;In my eye,  
+            For fear of losing you,I would never cry.  
+            And if the golden sun,Should cease to shine its light,  
+            Just one smile from you,Would make my whole world bright. 
+    </div>
+    <a href="https://www.baidu.com/">我有设置宽高哦</a>
+</body>
+</html>

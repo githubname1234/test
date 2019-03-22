@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #total{
+            border:5px dashed green;
+            height: 200px;
+            width: 1000px;
+           /*  position: absolute; 绝对定位 */
+            position: relative;   /* 相对定位 ,原有的位置还保留不动，div后面的元素依然和div偏移前显示位置一样*/
+            left: 100px;   /* 相对定位的向右偏移距离100px */
+            top: 30px;     /* 相对定位的向下偏移距离30px */
+        }
+        /* 
+       div{
+            height: 50px;
+            width: 300px;
+            border: 2px rgb(236, 156, 172) dotted; /* dashed虚线，dotted点线，solid实线 */
+         /*   padding: 30px;    /* div内容填充padding */
+         /*   margin-top: 50px;    /*  div边界 */
+    /*    } 
+         */
+        #div1{
+            padding-top: 10px;
+            background: pink;
+            display:inline-block;
+            float: left;  /* 使div1左移到div2的左侧 */
+            margin: auto 10px ;
+        }
+        .div2{
+            float: left;  /* 使div2上移left */
+            padding-left: 20px;
+            padding-top: 20px;
+            font-style: italic;
+            border-right: 10px solid red ; /* 设置有边框宽度10px，样式粗体，颜色红色 */
+            margin-left: 20px;
+        }
+        /* 父级=相对定位relative，自级=绝对定位absolute */
+        #img1{
+            position:relative;
+            left: 20px;
+            height: 300p    x;
+            width: 300px;
+            top: 40px;
+            float: left;
+            margin-right: 20px;
+
+        }
+        .imgdiv{
+            position:absolute; 
+            bottom: -25px;
+            left: 30px; 
+            font-size: 16px;
+            line-height: 200%;   /* 设置行高为字体的200% */
+            /* font-family: "Microsoft Yahei"; */
+            columns: #3300ff;;
+            width: 450px;
+            margin-left: -15px;
+        }
+        hr{
+            color: 2px rgb(247, 27, 71) dotted;
+        }
+        .total2{
+            display: table-cell;
+            vertical-align: middle;
+            width: 1000px;
+            height: 500px;
+            float: left;
+            border: 2px dashed #000;
+            margin-top: 50px;
+            margin-left: 200px;
+            background: url(../img/girl.jpg)
+            /* padding-top: 60px; */
+        }
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="div1">
+                第一篇  《静女》<br>
+                静女其姝，俟我于城隅。
+                爱而不见，搔首踟蹰。
+                静女其娈，贻我彤管。
+                彤管有炜，说怿女美。
+                自牧归荑，洵美且异...
+
+                第一篇  《静女》<br>
+                静女其姝，俟我于城隅。
+                爱而不见，搔首踟蹰。
+                静女其娈，贻我彤管。
+                彤管有炜，说怿女美。
+                自牧归荑，洵美且异...
+        </div>
+        <div class="div2">
+                第二篇  《伐檀》<br>
+                坎坎伐檀兮，置之河之干兮，河水清且涟猗。
+                不稼不穑，胡取禾三百廛[1]兮？不狩不猎，胡瞻尔庭有县[2]...
+        </div>
+    </div>
+
+
+    <div id="img1">
+            <img src="../img/grass.jpeg" alt="忧郁的小脑袋。。。">
+            <div class="imgdiv">
+                <hr>
+                <i>《硕鼠》</i><br>    <!-- 斜体-->
+                <s>硕鼠硕鼠，无食我黍！</s><br>  <!-- 贯穿线 -->
+                <u>三岁贯女，莫我肯顾。</u> <br>    <!-- 下划线 -->
+                逝将去女，适彼乐土。<br>
+                乐土乐土，爰得我所？<br>
+                硕鼠硕鼠，无食我麦！...
+            </div>
+    </div>
+
+    <div class="total2">
+            <p>《君子于役》</p>
+            <p>君子于役，不知其期，曷至哉？鸡栖于埘，日之夕矣，羊牛下来。</p>
+            <p>君子于役，如之何勿思！君子于役，不日不月，...</p>
+    </div>
+   
+</body>
+</html>
